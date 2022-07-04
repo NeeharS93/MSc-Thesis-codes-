@@ -21,4 +21,4 @@ def dt_max(model, Parameter_values, C_rates):
         sim = pybamm.Simulation(model, parameter_values=Parameter_values, var_pts=var_pts, solver=solver, C_rate=C_rate)
         sim.solve(t_eval)
         sims.append(sim)
-        return sims
+    return sims
