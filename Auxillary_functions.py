@@ -1,6 +1,7 @@
-def dt_max(model, Parameter_values, C_rates): 
-    import numpy as np 
-    import pybamm 
+import numpy as np 
+import pybamm
+
+def run_rate_capabilities(model, Parameter_values, C_rates): 
     var = pybamm.standard_spatial_vars
     var_pts = {var.x_n: 20, var.x_s: 20, var.x_p:400, var.r_n: 150, var.r_p: 20}
     sims = []
